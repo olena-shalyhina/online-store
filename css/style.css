@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgba(225, 180, 164, 50%); */
+  background-image: url(/images/1627203231_8-kartinkin-com-p-fon-nezhnikh-ottenkov-krasivo-8.jpg);
+  background-size: 100vw;
+  color:rgb(10, 10, 44);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5vw;
+  position: relative;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+div#phone {
+  font-size: 1.2rem;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  min-height: 50px;
+  width: 98%;
+  background-color: rgba(202, 99, 99, 0.5);
+  border: 2px solid rgb(106, 20, 20);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 2vw;
+  margin: 5px;
+}
+
+i.fa-bars {
+  display: none;
+}
+
+.nav-list {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 3vw;
+  padding: 0 5px;
+}
+
+header a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  color: rgb(158, 4, 4);
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.search {
+  height: 30px;
+  border: 1px solid rgb(106, 20, 20);
+  border-radius: 5px;
+  outline: none;
+  padding: 2px 10px;
+  margin-right: 10px;
+}
+
+.button {
+  background-color: rgb(204, 127, 127);
+  color: rgb(10, 10, 44);
+  font-weight: 500;
+  font-size: 1.0rem;
+}
+
+.button:hover {
+  color: rgb(158, 4, 4);
+  font-weight: 700;
+  background-color: rgb(225, 180, 164);
+  box-shadow: 2px 2px 5px rgb(10, 10, 44), 5px 5px 10px rgb(202, 99, 99);
+  border-radius: 5px;
+}
+
+
+.name-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+}
+
+div.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+h1 {
+  font-family: Pacifico, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 8vw;
+  color: rgb(237, 109, 109);
+  text-shadow: 2px 2px 5px black, 2px 2px 10px rgb(10, 10, 44), 5px 5px 15px rgb(224, 97, 38);
+  line-height: 1.2;
+}
+
+header h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+header img {
+  width: 15vw;
+  background-color: rgb(204, 127, 127);
+  border: 2px solid rgb(106, 20, 20);
+  border-radius: 20%;
+  text-align: center;
+}
+
+
+/* Main content */
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(10, 10, 44);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px;
+}
+
+main {
+  max-width: 100%;
+  background-color: rgb(225, 180, 164);
+  border-top: 2px solid rgb(106, 20, 20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.main-catalog-content {
+  width: 85vw;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px 0px;
+}
+
+.main-catalog-link {
+  text-decoration: none;
+  height: 320px;
+  aspect-ratio: 1/1;
+  display: block;
+  text-align: center;
+  border: 2px solid rgb(202, 99, 99);
+  box-shadow: 2px 2px 5px rgb(10, 10, 44), 5px 5px 15px rgb(202, 99, 99);
+  position: relative;
+  margin: 10px;
+}
+
+.main-catalog-link p {
+  width: 100%;
+  background-color: rgba(10, 10, 44, 0.8);
+  color: rgb(202, 99, 99);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px black, 2px 2px 10px rgb(10, 10, 44), 5px 5px 15px rgb(204, 127, 127);
+  border-bottom: 2px solid rgb(204, 127, 127);
+  padding: 5px;
+  position: absolute;
+}
+
+.main-catalog-link p:hover {
+  font-size: 1.7rem;
+  font-weight: 700;
+  
+}
+
+.main-catalog-link img {
+  width: 100%;
+  height: 100%;
+} 
+
+h5 {
+  color: rgb(10, 10, 44);
+  font-size: 1.0rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-delivery-content {
+  width: 60%;
+  background-color: rgba(202, 99, 99, 0.3);
+  border: 2px solid rgb(204, 127, 127);
+  text-align: justify;
+  padding: 20px 40px;
+  margin: 30px;
+  cursor: default;
+}
+
+.main-delivery-content ul{
+  margin: 10 20px;
+}
+
+#main-video-content {
+  width: 80%;
+  aspect-ratio: 16/9;
+  margin-bottom: 60px;
+}
+
+#main-video-content h3 {
+  width: 100%;
+  background-color: rgb(204, 127, 127);
+  line-height: 0.5;
+}
+
+#main-video-content iframe {
+  width: 100%;
+  height:  100%;
+  border: 2px solid rgb(204, 127, 127);
+}
+
+
+/* Footer */
+
+footer {
+  height: 180px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  cursor: default;
+}
+
+footer h4 {
+  background-color: rgb(204, 127, 127);
+  color: rgb(10, 10, 44);
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 20px 0px;
+}
+
+section#telephon, section#store-opening-hours, section#email {
+  width: 33.33%;
+  height: 100%;
+  border: 2px solid rgb(106, 20, 20);;
+  text-align: center;
+  margin: 1px;
+}
+
+a.home {
+  width: 40px;
+  height: 40px;
+  color: inherit;
+  font-size: 24px;
+  line-height: 36px;
+  border-radius: 50%;
+  background-color: rgb(202, 99, 99);
+  border: 2px solid rgb(10, 10, 44);
+  text-align: center;
+  display: block;
+  position: fixed;
+  left: 5px;
+  bottom: 5px;
+}
+
+a.home:hover {
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  background-color: rgba(87, 218, 47, 0.5);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  i.fa-bars {
+    display: block;
+  }
+  .nav-list li {
+    display: none;
+  }
+
+  nav:hover .nav-list li {
+    display: block;
+    z-index: 10;
+  }
+  
+  .nav-list a {
+    width: 250px;
+    background-color: rgb(225, 180, 164);
+    font-size: 0.85rem;
+    border: 1px solid rgb(106, 20, 20);
+    border-radius: 5px;
+    border-top: 0;
+    display: inline-block;
+    padding: 5px;
+  }
+
+  .nav-list a:hover {
+    font-weight: 900;
+    padding: 10px;
+  }
+
+  .nav-list {
+    position: absolute;
+    left: 0px;
+    top: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  header h2 {
+    font-size: 1.5em;
+    padding-top: 10px;
+
+  }
+
+  .main-catalog-link {
+    height: 300px;
+  }
+
+  h3 {
+    font-size: 1.0rem;
+  }
+
+  h5 {
+    font-size: 1.0rem;
+  }
+
+  .main-delivery-content {
+    width: 100%;
+  }
+
+  .main-delivery-content p, .main-delivery-content li {
+    font-size: 0.5rem;
+  }
+
+  footer {
+    height: 80px;
+  }
+  
+  section h4 {
+    font-size: 1.2em;
+  }
+
+  section pre{
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {  
+  .main-catalog-link {
+    height: 350px;
+  }
+
+  footer {
+    height: 100px;
+  }
+
+  footer h4 {
+    padding: 10px 0;
+  }
+}
+
+
+
+/* Yarn-catalog */
+
+.catalog-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.yarn-catalog-header {
+  text-shadow: none;
+}
+
+img.logo-catalog {
+  width: 100px;
+}
+
+/* Jarn-catalog main */
+
+.items-catalog {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  margin: 20px;
+}
+
+.card-container {
+  width: 250px;
+  background-color: rgb(204, 127, 127);
+  border: 2px solid rgb(106, 20, 20);
+  border-radius: 10px;
+}
+
+.item-card {
+  width: 90%;
+  background-image: url(/images/1627203231_8-kartinkin-com-p-fon-nezhnikh-ottenkov-krasivo-8.jpg);
+  border: 2px solid rgb(237, 109, 109);
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.item-card img {
+  width: 100%;
+  height: 200px;
+  padding: 30px 30px 10px;
+}
+
+.item-price {
+  width: 80%;
+  font-weight: 500;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sale {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(240, 89, 89)
+  ;
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+}
+
+.price {
+  font-size: 2.0rem;
+  line-height: 60px;
+}
+
+.description {
+  width: 200%;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-button {
+  background-color: rgb(225, 180, 164);
+  color: rgb(106, 20, 20);
+  font-size: 2rem;
+  border: 2px solid rgb(106, 20, 20);
+  border-radius: 10px;
+  padding: 5px 30px;
+  margin: 20px;
+}
+
+.card-button:hover {
+  background-color: rgb(225, 180, 164);
+  box-shadow: 2px 2px 5px rgb(10, 10, 44), 5px 5px 10px rgb(202, 99, 99);
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
